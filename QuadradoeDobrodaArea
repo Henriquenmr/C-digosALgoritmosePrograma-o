@@ -1,0 +1,9 @@
+#ENTRADA
+L = float(input("Digite o tamanho do lado do quadrado: "))
+
+#PROCESSAMENTO
+Área = L*L
+D_area = 2*Área
+
+#SAÍDA
+print ("A área é", Área, "e o dobro da área é", D_area)
