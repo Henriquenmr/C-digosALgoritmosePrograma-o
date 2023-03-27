@@ -1,0 +1,35 @@
+salto1 = float(input("Digite o valor do primeiro salto: "))
+salto2 = float(input("Digite o valor do segundo salto: "))
+salto3 = float(input("Digite o valor do terceiro salto: "))
+salto4 = float(input("Digite o valor do quarto salto: "))
+salto5 = float(input("Digite o valor do quinto salto: "))
+totaldesaltos = salto1 + salto2 + salto3 + salto4 + salto5
+
+maiorsalto = 0
+menorsalto = 0
+
+while salto1 > salto2 and salto1 > salto3 and salto1 > salto4 and salto1 > salto5:
+  salto1 = maiorsalto
+while salto2 > salto1 and salto2 > salto3 and salto2 > salto4 and salto2 > salto5:
+  salto2 = maiorsalto
+while salto3 > salto1 and salto3 > salto2 and salto3 > salto4 and salto2 > salto5:
+  salto3 = maiorsalto
+while salto4 > salto1 and salto4 > salto2 and salto4 > salto3 and salto4 > salto5:
+  salto4 = maiorsalto
+while salto5 > salto1 and salto5 > salto2 and salto5 > salto3 and salto5 > salto4:
+  salto5 = maiorsalto
+while salto1 < salto2 and salto1 < salto3 and salto1 < salto4 and salto1 < salto5:
+  salto1 = menorsalto
+while salto2 < salto1 and salto2 < salto3 and salto2 < salto4 and salto2 < salto5:
+  salto2 = menorsalto
+while salto3 < salto1 and salto3 < salto2 and salto3 < salto4 and salto2 < salto5:
+  salto3 = menorsalto
+while salto4 < salto1 and salto4 < salto2 and salto4 < salto3 and salto4 < salto5:
+  salto4 = menorsalto
+while salto5 < salto1 and salto5 < salto2 and salto5 < salto3 and salto5 < salto4:
+  salto5 = menorsalto
+
+saltosexcluidos = float(maiorsalto - menorsalto)
+mediadossaltos = (totaldesaltos - saltosexcluidos)/3
+
+print ("A média dos saltos foi", mediadossaltos)
