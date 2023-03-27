@@ -1,0 +1,15 @@
+#ENTRADA
+Quantsabor = int(input("Quantos sabores serão analisados?" ))
+while QuantSabor  >= 1:
+#DADOS
+NumH = int(input("Quantos homens participaram da pesquisa? "))
+NumM = int(input("Quantas mulheres participaram da pesquisa? "))
+M20bom = int(input("Quantas mulheres com mais de 20 anos acharam o sabor bom? "))
+M30ruim = int(input("Quantas mulheres com mais de 30 anos acharam o sabor ruim? "))
+Hpessimo = int(input("Quantos homens acharam o sabor pessimo? "))
+#PROCESSAMENTO
+HBom = (NumH - HRuim)
+BomSaborM = (M20Bom / NumM)* 100
+BomSaborH = (HBom / NumH) * 100
+print(f'A aceitação des homens é {AceitaçãoSaborH:.2f}%, a aceitação das mulheres é {AceitaçãoSaborM:.2f}% e a aceitação geral é {AceitaçãoSaborG:.2f}%')
+QuantSabor = QuantSabor - 1
