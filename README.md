@@ -1,0 +1,29 @@
+# C-digosALgoritmosePrograma-o
+Códigos das aulas de Algoritmo e Programação 1
+
+#ENTRADA
+carne = str(input("Qual carne vai comprar? "))
+quantidade = float(input("Quantos quilos vai comprar? "))
+
+#PROCESSAMENTO
+if carne == "File Duplo" and quantidade > 5:
+  preço = quantidade * 5.8
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+elif carne == "File Duplo" and quantidade <= 5:
+  preço = quantidade * 4.9
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+elif carne == "Alcatra" and quantidade > 5:
+  preço = quantidade * 6.8
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+elif carne == "Alcatra" and quantidade <= 5:
+  preço = quantidade * 5.9
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+elif carne == "Picanha" and quantidade > 5:
+  preço = quantidade * 7.8
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+elif carne == "Picanha" and quantidade <= 5:
+  preço = quantidade * 6.9
+  print ("carne: ", carne, "quantidade: ", quantidade, "kgs", "preço final: ",  preço)
+else:
+  carne = str(input("Nome inválido. Favor digitar File Duplo, Alcatra ou Picanha"))
